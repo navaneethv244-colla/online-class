@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fav icon  -->
+     <link rel="shortcut icon" href="https://png.pngtree.com/png-vector/20250408/ourmid/pngtree-global-education-logo-with-graduation-cap-and-book-png-image_15929049.png" type="image/x-icon">
+     <!-- font awsome  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- tailwind  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="relative bg-black">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <!-- Mobile menu button-->
+        <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex shrink-0 items-center">
+          <img src="https://png.pngtree.com/png-vector/20250408/ourmid/pngtree-global-education-logo-with-graduation-cap-and-book-png-image_15929049.png" alt="Your Company" class="h-9 w-auto" />
+        </div>
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+           
+          </div>
+        </div>
+      </div>
+      <div class="absolute inset-y-0 right-0 flex items-center gap-5 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+          <i class="fa-solid fa-magnifying-glass fa-2x" style="color: rgb(255, 255, 255);"></i>
+        </button>
+
+        <!-- Profile dropdown -->
+        <el-dropdown class="relative ml-3">
+          <button class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+            <span class="absolute -inset-1.5"></span>
+            <span class="sr-only">Open user menu</span>
+            <i class="fa-solid fa-bars fa-2x" style="color: rgb(255, 255, 255);"></i>
+          </button>
+
+          <el-menu anchor="bottom end" popover class="w-48 origin-top-right rounded-md bg-white py-1 shadow-lg outline outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Your profile</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Settings</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Sign out</a>
+          </el-menu>
+        </el-dropdown>
+      </div>
+    </div>
+  </div>
+
+  <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+    <div class="space-y-1 px-2 pt-2 pb-3">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+      <a href="#" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Dashboard</a>
+      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Calendar</a>
+    </div>
+  </el-disclosure>
+</nav>
+<section class="bg-[url(https://static.vecteezy.com/system/resources/thumbnails/052/409/538/small/a-man-with-a-beard-and-glasses-is-wearing-headphones-he-is-smiling-and-looking-at-the-camera-photo.jpg)] relative w-full h-screen bg-cover bg-center">
+    <div class="row absolute top-2">
+        <div class="cols w-1/2 m-10" >
+            <p class="text-9xl text-white">Learn. Lead. <br>
+            Transform.</p>
+            <p class="text-white">Build in-demand skills to unlock your potential and drive outcomes for your career and business.</p>
+           <div class="mt-2 flex gap-2">
+                <button class="text-white px-5 py-2 bg-blue-800 border-1 border-white"><i class="fa-regular fa-circle-user" style="color: rgb(255, 255, 255);"></i>For Individual</button>
+                 <button class=" text-gray-100 px-9 py-3 border-gray-300 border-1"><i class="fa-solid fa-bag-shopping" style="color: rgb(255, 255, 255);"></i>For Bussiness</button>
+           </div>
+        </div>
+    </div>
+</section>
+<section class="bg-[url(https://www.udacity.com/_next/image?url=https%3A%2F%2Fvideo.udacity-data.com%2Ftopher%2F2026%2FMay%2F6a10adbf_data-engineering-with-aws-plp-1456-x-842%2Fdata-engineering-with-aws-plp-1456-x-842.jpg&w=3840&q=80)] m-20 relative w-280 h-60 rounded bg-cover bg-center">
+    <button class="bg-gray-100 px-10 py-3 rounded m-6 mt-40 text-black">Learn more.</button>
+</section>
+<section>
+        <div class="text-center">
+            <p class="text-6xl">Skill development that drives results</p>
+            <p class="mt-5 mx-5">Master today's most in-demand skills in AI, Data, Programming and beyond through Udacity's hands-on projects, expert <br> mentorship, and flexible programs built with the world's leading tech companies.
+
+            </p>
+
+        </div>
+        <div class="flex justify-between p-10">
+            <div class="w-1/3 h-100 bg-gray-100 m-4 p-3 rounded-2xl">
+                <div class="w-full h-35 bg-blue-800 rounded-3xl">
+                    <p class="text-white text-3xl pt-15 font-medium">
+                        Hands-on <br> learning
+                    </p>
+                </div>
+                <p class="text-xl text-blue-800 p-3">
+                  Learn by building
+                </p>
+                <hr>
+                <p class="p-10 text-sm text-gray-500">Gain job-ready skills through real <br> projects, created with top tech <br> companies to reflect what the <br> industry actually needs.</p>
+            </div>
+            <div class="w-1/3 h-100 bg-gray-100 m-4 p-3 rounded-2xl">
+                <div class="w-full h-35 bg-blue-800 rounded-3xl">
+                  <p class="text-white text-3xl pt-15 font-medium">
+                        Personalized <br> support
+                  </p>
+                </div>
+                <p class="text-xl text-blue-800 p-3">
+                  Support, anytime you need it
+                </p>
+                <hr>
+                <p class="p-10 text-sm text-gray-500">Get personalized support and <br> feedback from industry <br> professionals who've done the <br> work and know what it takes.</p>
+            </div>
+            <div class="w-1/3 h-100 bg-gray-100 m-4 p-3 rounded-2xl">
+                <div class="w-full h-35 bg-blue-800 rounded-3xl">
+                  <p class="text-white text-3xl pt-15 font-medium">
+                       Measurable <br> outcomes
+                    </p>
+                </div>
+                <p class="text-xl text-blue-800 p-3">
+                  Progress you can see
+                </p>
+                <hr>
+                <p class="p-10 text-sm text-gray-500">Start applying your skills from day <br> one, build your portfolio, and <br> achieve your career goals.</p>
+            </div>
+        </div>
+        <div class="justify-between p-5 bg-blue-900">
+            <div class="flex justify-between items-center w-full">
+              <p class="text-white text-3xl">Master the skill that matter most</p>
+              <button class="bg-blue-800 p-2 text-white">Browse programs</button>
+            </div>
+            <div class="flex w-full mt-5">
+                <div class="w-1/4 bg-white h-90 m-3">
+                  <div class="bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7hwzryD_7fJ-2ow0MwasVICllQf9c4IOJYNUqqfeGKODMsK4s1ajkmihK&s=10)] w-full h-30 bg-cover bg-center"></div>
+                  <h1 class="text-blue-800 p-3 font-bold">Generative AI</h1>
+                  <p class="p-5">Embark on a transformative journey into generate Ai! we'll start by diving into the ..</p>
+                    <h1 class="text-blue-800 p-3 font-bold">NANODEGREE PROGRAM <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></h1>
+                </div>
+                <div class="w-1/4 bg-white h-90 m-3">
+                  <div class="bg-[url(https://mitsloan.mit.edu/sites/default/files/styles/og_image/public/2026-02/agentic-ai-dobi.jpg.webp?h=7691f918&itok=Eer2U5KD)] w-full h-30 bg-cover bg-center"></div>
+                   <h1 class="text-blue-800 p-3 font-bold">Agent AI</h1>
+                   <p class="p-5">Go beyound single chatbots to engineer sophiscated, cordinated teams of Al...</p>
+                   <h1 class="text-blue-800 p-3 font-bold">NANODEGREE PROGRAM</h1>
+                </div>
+                <div class="w-1/4 bg-white h-90 m-3">
+                    <div class="bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHasfJMviftuolpTLGoT0QZQ9sojgeBmcCWa7AgNuIemU8BNDZBFoWeSU&s=10)] w-full h-30 bg-cover bg-center"></div>
+                    <h1 class="text-blue-800 p-3 font-bold">AI Programming with Python</h1>
+                   <p class="p-5">Develop a strong foundation in python programming for comphrensive Nanodegree</p>
+                   <h1 class="text-blue-800 p-3  font-bold">NANODEGREE PROGRAM <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></h1>
+                </div>
+                <div class="w-1/4 bg-white h-90 m-3">
+                    <div class="bg-[url(https://thumbs.dreamstime.com/b/concept-mechanism-product-management-businessman-showing-open-box-blurred-background-169681095.jpg)] w-full h-30 bg-cover bg-center">
+                  </div>
+                   <h1 class="text-blue-800 p-3 font-bold">Product Manager</h1>
+                   <p class="p-5">Build job-ready skills for a successful PM career with this comprehensive Nanodegree...</p>
+                   <h1 class="text-blue-800 p-3 font-bold">NANODEGREE PROGRAM <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></h1>
+                </div>
+            </div>
+        </div>
+</section>
+<section class="h-screen">
+    <h1 class="text-3xl text-center">Trusted by the world's most innovative companies</h1>
+    <p class="text-center mx-30">Global leaders partner with Udacity to drive workforce transformation and unlock their organization's full potential through cutting-edge tech skills.</p>
+    <div class="border h-70 m-20 rounded-xl border-gray-100 bg-gray-50 flex flex-wrap justify-evenly items-center ps-30 py-5">
+      <div class="w-60">
+        <img src="https://cdn.sanity.io/images/tlr8oxjg/production/fcfe4081e0a265070aea24157a052497f62f29ad-108x61.svg?w=256&q=100&fit=clip&auto=format" width="50px" alt="">
+      </div>
+      <div class="w-60">
+        <img src="https://cdn.sanity.io/images/tlr8oxjg/production/fe201d9a669100d8d3626415d688516e168c5ede-110x29.svg?w=256&q=100&fit=clip&auto=format" width="100px" alt="">
+      </div>
+      <div class="w-60">
+        <img src="https://cdn.sanity.io/images/tlr8oxjg/production/fa1e65c7bc02aabf835509c6cc10eae741d0a4c8-40x40.svg?w=96&q=100&fit=clip&auto=format" width="50px" alt="">
+      </div>
+      <div class="w-60">
+        <img src="https://cdn.sanity.io/images/tlr8oxjg/production/cb11117b0ad363eda60df97dddb683b3e750ffa2-123x28.svg?w=256&q=100&fit=clip&auto=format" width="100px" alt="">
+      </div>
+      <div class="w-60">
+        <img src="https://cdn.sanity.io/images/tlr8oxjg/production/e9935d1dd932e6695f14d85c84ecd3e2077cb3df-141x44.svg?w=384&q=100&fit=clip&auto=format" width="100px" alt="">
+      </div>
+      <div class="w-60">
+        <img src="https://cdn.sanity.io/images/tlr8oxjg/production/64aa5d666eca3de235f210f3b43df7f9aba7a1d5-112x40.svg?w=256&q=100&fit=clip&auto=format" width="100px" alt="">
+      </div>
+      <div class="w-60">
+        <img src="https://cdn.sanity.io/images/tlr8oxjg/production/cece86f9211b37c28279a36a7f23777437e93336-93x25.svg?w=256&q=100&fit=clip&auto=format" width="100px" alt="">
+      </div>
+      <div class="w-60">
+        <img src="https://cdn.sanity.io/images/tlr8oxjg/production/492451b41093244557d2eb3e6a7cd79d971a2881-82x14.svg?w=256&q=100&fit=clip&auto=format" width="100px" alt="">
+      </div>
+
+    </div>
+</section>
+<section>
+      <h1 class="text-6xl font-medium text-center">Success that speaks for itself</h1>
+      <p class="text-center text-gray-500 mt-5">Join the 25M+ learners who have skilled up and stood out.</p>
+      <div class="bg-[url(https://media.istockphoto.com/id/1322205588/photo/cropped-shot-of-three-young-businessmpeople-working-together-on-a-laptop-in-their-office-late.jpg?b=1&s=1024x1024&w=0&k=20&c=xzSwwZXd2Zr-w0C0B-rEXCxQ7cvGxN8zMQE9FGnEsU4=)] m-20  w-280 h-100 rounded p-4 bg-cover">
+          <div class="w-100 h-90 bg-slate-500/20">
+              <h1 class="text-white font-bold m-2 text-3xl">From tire shop technician to business analyst</h1>
+              <p class="text-white m-5 ">After graduating from a Udacity Nanodegree program, Michael was able to break into a new career at a Fortune 100 company.</p>
+              <button class="px-5 py-3 mt-25 ms-3 text-white border">Watch featured video</button>
+          </div>
+      </div>
+</section>
+<footer class="bg-black w-full h-screen flex p-30">
+  <div class="flex">
+      <div class="p-5">
+         <h1 class="text-white">COMPANY</h1>
+        <hr class="text-white">
+        <ul class="text-white text-sm">
+            <li>About us</li>
+            <li>Why udancity</li>
+            <li>Blog</li>
+            <li>In the news</li>
+            <li>Jobs at udancity</li>
+            <li>Become a mentor</li>
+            <li>Partner with udancity</li>
+        </ul>
+      </div>
+      <div class="p-5">
+        <h1 class="text-white">FEATURED PROGRAMMING</h1>
+        <hr class="text-white">
+          <ul class="text-white text-sm">
+            <li>Bussiness analyst</li>
+            <li>SQL</li>
+            <li>AWS Cloud Architecure</li>
+            <li>Data Analyst</li>
+            <li>Intro to Programming</li>
+            <li>Digital Marketing</li>
+            <li>Self Driving Car Engineer</li>
+          </ul>
+      </div>
+  </div>
+  <div class="flex">
+      <div class="p-5">
+        <h1 class="text-white">UDANCITY SCHOOLS</h1>
+        <hr class="text-white">
+          <ul class="text-white text-sm">
+            <li>School of animation and Game development</li>
+            <li>Schol of Artificial intelligence</li>
+            <li>School of Autonimous Systems</li>
+            <li>School of Bussiness</li>
+            <li>Carrier Bussiness</li>
+            <li>Carrer Resources</li>
+            <li>School of Cloud Computing</li>
+          </ul>
+      </div>
+      <div class="p-5">
+        <h1>udancity</h1>
+        <hr class="text-white">
+          <ul class="text-white text-sm">
+              <li>School of Cybersecurity</li>
+              <li>School of Data Science</li>
+              <li>School of DevOps</li>
+              <li>School of Eecutive Leadership</li>
+              <li>School of product Management</li>
+              <li>School of programming and Development</li>
+          </ul>
+      </div>
+  </div>
+
+</footer>
+</body>
+</html>
